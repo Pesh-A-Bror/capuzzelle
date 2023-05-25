@@ -6,6 +6,7 @@
   text-align: center;
 }
 #progettoegallery{
+  margin-top: 24px;
   
   margin-bottom: 24px;
 }
@@ -20,9 +21,10 @@
   background-image: url('/config/images/sfondo_crypta.svg');
   height: 100vh;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .show{
+  
   display: block;
   padding: 0 24px;
 }
@@ -79,11 +81,18 @@ color: white;
 .stroked{
   text-decoration: line-through;
 }
+.container-faq h1 {
+  color: white;
+  text-align: left;
+  margin-bottom: 24px
+px
+;
+}
 
 #roadmap #roadmapContainer .roadmapItem{
   font-weight: 900;
   width: 100%;
-  background: #EE6352;
+  background: #ffab1c;
   display: flex;
   height: 78px;
   align-items: center;
@@ -92,6 +101,7 @@ color: white;
   box-sizing: border-box;
   margin-bottom: 10px;
   border-radius: 8px;
+  text-align: left;
 }
 #lecape{
   background-color: #242121;
@@ -127,14 +137,15 @@ color: white;
   font-family: 'Inconsolata', monospace !important; 
 }
 #lecape #containerCape .capa .name{
-  color: white;
-  font-size: 24px;
-  font-weight: 900;
-  font-family: 'Inconsolata', monospace !important; 
-  margin-bottom: 25px;
-  margin-top: 20px;
+  color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Inconsolata,monospace!important;
+    margin-bottom: 8px;
+    margin-top: 16px;
 }
 #lecape #containerCape .capa .img{
+  box-shadow: 0px 10px 30px black;
   border-radius: 24px;
   overflow: hidden;
   display: flex;
@@ -183,12 +194,7 @@ color: white;
 }
 @media (min-width:10px) and (max-width:500px){
  
-  #roadmap #roadmapContainer #title{
-    display: none!important;
-  }
-  #roadmap #roadmapContainer #description{
-    display: none!important;
-  }
+  
   #roadmap #social{
     width: 100%;
   }
@@ -221,13 +227,13 @@ details summary {
   color: white;
   width: 100%;
   font-family: 'Inconsolata', monospace !important; 
-  padding: 0.5rem 0;
+  padding: 16px;
   border-top: 1px solid white;
   position: relative;
   cursor: pointer;
   font-size: 1.25rem;
   text-align: left;
-  font-weight: 300;
+  font-weight: 700;
   list-style: none;
 }
 
@@ -239,7 +245,7 @@ details summary:after {
   font-size: 1.75rem;
   line-height: 0;
   margin-top: 0.75rem;
-  right: 0;
+  right: 16px;
   font-weight: 200;
   transform-origin: center;
   transition: 200ms linear;
@@ -257,5 +263,5 @@ details p {
   font-size: 0.95rem;
   margin: 0 0 1rem;
   color: white;
-  padding-top: 1rem;
+  padding:16px;
 }
