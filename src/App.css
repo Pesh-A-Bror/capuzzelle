@@ -152,8 +152,7 @@ img.imgfollow {
   flex-direction: column;
 }
 label.roadmapItem.checkbox {
-  padding: 8px;
-  align-items: center;
+  margin-bottom: 24px;
 }
 #lecape{
   background-color: #242121;

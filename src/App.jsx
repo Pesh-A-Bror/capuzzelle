@@ -194,15 +194,15 @@ function App() {
               </div>
             </div>
             <div id="social">
-              <a href="
+              <a href="https://discord.com/invite/cnDefkn74b
               " target="_blank">
               <div class="follow discord">
                 <img class="imgfollow" src="config/images/discordlogo.svg" alt="" />
-              </div></a><a href="
+              </div></a><a href="https://rarible.com/collection/polygon/0x304dbda4452f3e1337c8b95f1dc5087c0c96cbdd/items
               " target="_blank">
               <div class="follow rarible">
                 <img class="imgfollow" src="config/images/rarible.svg" alt="" />
-              </div></a><a href="
+              </div></a><a href="https://www.instagram.com/crypta_capuzzelle/
               " target="_blank">
               <div class="follow instagram">
                 <img class="imgfollow" src="config/images/instagramlogo.svg" alt="" />
@@ -231,7 +231,7 @@ function App() {
               <div className="capa">
                 <div className="img">
                   <img
-                    src="config/images/lorenzo_gravina.png"
+                    src="https://dl.openseauserdata.com/cache/originImage/files/6e53bf68f67357991cb8652c28c5b5ee.png"
                     alt="lorenzo gravina"
                   />
                 </div>
@@ -240,14 +240,14 @@ function App() {
               </div>
               <div className="capa">
                 <div className="img">
-                  <img src="config/images/1.png" alt="Antonio Ferrarioli" />
+                  <img src="https://dl.openseauserdata.com/cache/originImage/files/3b0463d5fab754ccda02375f63816ee9.png" alt="Antonio Ferrarioli" />
                 </div>
                 <div className="name">Antonio Ferraioli</div>
                 <div className="role">Head of Stuff</div>
               </div>
               <div className="capa">
                 <div className="img">
-                  <img src="config/images/4.png" alt="Costantino Sorrentino" />
+                  <img src="https://dl.openseauserdata.com/cache/originImage/files/ab392901b19050cfc626840fe4f972ec.png" alt="Costantino Sorrentino" />
                 </div>
                 <div className="name">Costantino Sorrentino</div>
                 <div className="role">Dev</div>
@@ -276,116 +276,73 @@ function App() {
               <h1>FAQ</h1>
               <div className="accordion">
                 <details>
-                  <summary>Che cos'è il minting di NFT?</summary>
+                  <summary>Cos'è una NFT?</summary>
                   <p>
-                    Il minting di NFT è il processo di creazione di un token non
-                    fungibile (NFT) su una rete blockchain.
+                  Una NFT (Non-Fungible Token) è un tipo di token crittografico unico che rappresenta la proprietà o la provenienza di un bene digitale, come un'opera d'arte, un video, un'animazione o un altro tipo di contenuto digitale. A differenza delle criptovalute tradizionali, le NFT sono uniche e non intercambiabili.
                   </p>
                 </details>
-                <details>
-                  <summary>
-                    Quali sono i requisiti per il minting di NFT?
-                  </summary>
+                
+                
+                
+              <details>
+                  <summary>Come posso acquistare una NFT su Crypto Capuzzelle?</summary>
                   <p>
-                    Per effettuare il minting di NFT è necessario disporre di
-                    una connessione internet, un portafoglio digitale (wallet) e
-                    un token nativo della blockchain su cui si vuole creare
-                    l'NFT.
-                  </p>
-                </details>
-                <details>
-                  <summary>
-                    Quali tipi di file possono essere utilizzati per il minting
-                    di NFT?
-                  </summary>
+                  Per acquistare una NFT su Crypto Capuzzelle, segui questi semplici passaggi:
+                  <ul>
+                    <li>
+                    Crea un account su Wallet Mask, se non ne hai già uno.
+                    </li>
+                    <li>
+                      Accedi al sito Crypta Capuzzelle attraverso il browser di Meta Mask
+                    </li>
+                    <li>
+                      Clicca sul bottone "adotta una capuzzella"
+                    </li>
+                    <li>
+                    Segui le istruzioni per completare il pagamento utilizzando la criptovaluta accettata dalla piattaforma.
 
-                  <p>
-                    I file comuni utilizzati per il minting di NFT includono
-                    immagini, video, audio e altri tipi di contenuti digitali.
-                  </p>
-                </details>
-                <details>
-                  <summary>
-                    Quali sono le piattaforme più popolari per il minting di
-                    NFT?
-                  </summary>
+                    </li>
+                    <li>
+                    Una volta completato il pagamento, la NFT sarà trasferita nel tuo wallet o dovrai importala manualmente
 
-                  <p>
-                    Le piattaforme più popolari per il minting di NFT includono
-                    Ethereum, Binance Smart Chain, Polygon, Tezos e molti altri.
-                  </p>
-                </details>
-                <details>
-                  <summary>Quali costi comporta il minting di NFT?</summary>
-                  <p>
-                    Il costo del minting di NFT può variare a seconda della
-                    piattaforma utilizzata, del tipo di file utilizzato e del
-                    valore dell'NFT creato.
+                    </li>
+                  </ul>
+
+
                   </p>
                 </details>
 
                 <details>
                   <summary>
-                    Qual è la differenza tra un token fungibile e un token non
-                    fungibile?
+                  Quali criptovalute accetta Crypto Capuzzelle per l'acquisto delle NFT?
                   </summary>
 
                   <p>
-                    Un token fungibile è uno scambio equivalente a un altro
-                    dello stesso valore, come una valuta digitale come il
-                    Bitcoin. D'altra parte, un token non fungibile è unico e
-                    irripetibile, come un'opera d'arte, un oggetto da collezione
-                    o un biglietto autografato.
+                  Attualmente, Crypto Capuzzelle accetta il MATIC
                   </p>
                 </details>
                 <details>
-                  <summary>Come posso acquistare o vendere un NFT?</summary>
+                  <summary>Come posso pagare le NFT su Crypto Capuzzelle?</summary>
 
                   <p>
-                    Gli NFT possono essere acquistati o venduti su diverse
-                    piattaforme online che offrono servizi di trading.
-                    Assicurati di fare attenzione alle commissioni di
-                    transazione e alle politiche di conservazione della
-                    piattaforma prima di procedere con l'acquisto o la vendita.
+                  Puoi pagare le NFT su Crypto Capuzzelle utilizzando la criptovaluta accettata dalla piattaforma. Durante il processo di acquisto, verrai guidato per effettuare il pagamento utilizzando il tuo portafoglio digitale. Assicurati di avere abbastanza fondi nella tua criptovaluta scelta per completare l'acquisto.
                   </p>
                 </details>
                 <details>
-                  <summary>Come posso proteggere il mio NFT?</summary>
+                  <summary>Cosa succede dopo aver acquistato una NFT?</summary>
 
                   <p>
-                    Gli NFT vengono registrati sulla blockchain e vengono quindi
-                    garantiti dall'immutabilità e dalla trasparenza di questo
-                    registro. Alcuni proprietari di NFT scelgono inoltre di
-                    conservare i loro token in portafogli freddi o wallet
-                    hardware per una maggiore sicurezza.
+                  Dopo aver completato l'acquisto di una NFT su Crypto Capuzzelle, la NFT sarà visualizzabile sulla pagina Openasea di capuzzelle e potrai importala manualmente sul tuo wallet. Da lì, sarai in grado di visualizzare, gestire e scambiare le tue NFT. Potrai anche mostrarle ad altri utenti o esporle sul mercato della piattaforma, se lo desideri.
                   </p>
                 </details>
                 <details>
-                  <summary>
-                    Quali sono le tendenze più recenti nel mondo del minting d
-                    NFT?
-                  </summary>
+                  <summary>Posso rivendere le NFT acquistate su Crypto Capuzzelle?</summary>
 
                   <p>
-                    Alcune delle tendenze più recenti nel mondo del minting di
-                    NFT includono l'utilizzo della tecnologia blockchain per
-                    combattere la contraffazione, l'uso di NFT come garanzia per
-                    prestiti e la creazione di NFT "smart" che consentono di
-                    sbloccare l'accesso a contenuti o servizi specifici.
+                  Sì, se possiedi una NFT acquistata su Crypto Capuzzelle, sei libero di rivenderla. La rivendita delle NFT può essere effettuata sulla piattaforma stessa o su altri mercati di NFT. Tieni presente che le condizioni e le commissioni possono variare a seconda della piattaforma scelta per la rivendita.
                   </p>
                 </details>
-                <details>
-                  <summary>
-                    Dove posso trovare ulteriori informazioni sull'argomento del
-                    minting di NFT?
-                  </summary>
-
-                  <p>
-                    Puoi trovare ulteriori informazioni sul minting di NFT sul
-                    sito del progetto blockchain che utilizzi o tramite risorse
-                    online come blog specializzati, forum e comunità di utenti.
-                  </p>
-                </details>
+             
               </div>
             </div>
           </section>
@@ -394,12 +351,12 @@ function App() {
             <div class="logosocial">
               <a href="https://www.instagram.com/crypta_capuzzelle/" target="_blank">
             <img class="social" src="config/images/Instagram - Negative.svg" alt="" /></a>
-            <a href="" target="_blank">
+            <a href="https://discord.com/invite/cnDefkn74b" target="_blank">
             <img class="social" src="config/images/Discord - Negative.svg" alt="" /></a>
             </div>
             <p>
-              Copyrights – 2023 CRYPTA CAPUZZELLE by <a href="" target="_blank"> Lorenzo Gravina</a> - <a href="" target="_blank">Antonio
-              Ferraioli</a> & <a href="" target="_blank">Costantino Sorrentino</a> . All rights reserved
+              Copyrights – 2023 CRYPTA CAPUZZELLE by <a href="https://www.linkedin.com/in/lorenzo-gravina-a4175037/" target="_blank"> Lorenzo Gravina</a> - <a href="https://www.linkedin.com/in/antonioferraioli/" target="_blank">Antonio
+              Ferraioli</a> & <a href="https://www.linkedin.com/in/costantino-sorrentino/" target="_blank">Costantino Sorrentino</a> . All rights reserved
             </p>
           </section>
         </div>

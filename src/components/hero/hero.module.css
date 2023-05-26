@@ -85,15 +85,21 @@ button{
     color: #000000;
     cursor: pointer;
     font-size: 16px;
-    box-shadow: 0 10px 30px -10px #ffab1d8a;
+    transition: 1s;
+    
   
 }
-button:active {
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  font-family: "Inconsolata", monospace;
+ button:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 0 4px 30px -8px #ffab1d8a;
 }
+button:active {
+    transform: scale(0.9);
+    transition: 1s;
+    box-shadow: 0 0px 0px 0px #ffab1d8a;
+}
+
 .container{
     margin: 40px auto;
   

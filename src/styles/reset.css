@@ -156,9 +156,7 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
-html {
-  background-color: "#4C4C4C";
-}
+
 
 div {
   -moz-user-select: none;
