@@ -22,7 +22,7 @@ function Hero(props) {
     <div id="hero" className={css.containerHero}>
       
         <img
-          src="/config/images/crypta_logo.svg"
+          src="/config/images/crypta_logo.jpg"
           className={css.img}
           alt="logo_capuzzelle"
         />
