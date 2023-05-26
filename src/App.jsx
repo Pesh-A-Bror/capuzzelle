@@ -150,7 +150,7 @@ function App() {
               <section id="gallery">
               <img class="one" src="config/images/gallery_one.png"  alt="" />
                 <img class="two" src="config/images/gallery_two.png" alt="" />
-                <a href="https://opensea.io/collection/e-capuzzelle" id="collection">SCOPRI LA COLLEZIONE</a>
+                <a href="https://opensea.io/collection/e-capuzzelle" target="_blank" id="collection">SCOPRI LA COLLEZIONE SU OPENSEA</a>
               </section>
             </div>
           </section>
@@ -162,46 +162,61 @@ function App() {
                 uno dei luoghi più suggestivi e misteriosi di Napoli in un’opera
                 digitale unica.
               </div>
-              <div className="roadmapItem stroked">
-                <img src="config/images/Checkbox_filled.png" alt="checkbox" />
-                Lancio adozione 50 capuzzelle
-              </div>
-              <div className="roadmapItem stroked">
-                <img src="config/images/Checkbox_filled.png" alt="checkbox" />
-                Creazione canale Discord
-              </div>
-              <div className="roadmapItem">
-                <img src="config/images/Checkbox_empty.png" alt="checkbox" />
-                Fine adozione 50 capuzzelle
-              </div>
-              <div className="roadmapItem">
-                <img src="config/images/Checkbox_empty.png" alt="checkbox" />
-                Merch esclusivo
-              </div>
-              <div className="roadmapItem">
-                <img src="config/images/Checkbox_empty.png" alt="checkbox" />
-                Drop nuove capuzzelle
-              </div>
-              <div className="roadmapItem">
-                <img src="config/images/Checkbox_empty.png" alt="checkbox" />
-                Collaborazioni
-              </div>
-              <div className="roadmapItem">
-                <img src="config/images/Checkbox_empty.png" alt="checkbox" />
-                Fase 3
+              <div className="boxroad">
+              <label className="roadmapItem checkbox stroked">
+              <input type="checkbox" disabled="true" checked/><span>
+                Lancio adozione 50 capuzzelle</span>
+              </label>
+              <label className="roadmapItem checkbox stroked">
+              <input type="checkbox" disabled="true" checked/><span>
+                Creazione canale Discord</span>
+              </label>
+              <label className="roadmapItem checkbox">
+              <input type="checkbox" disabled="true" /><span>
+                Fine adozione 50 capuzzelle</span>
+              </label>
+              <label className="roadmapItem checkbox">
+              <input type="checkbox" v/><span>
+                Merch esclusivo</span>
+              </label>
+              <label className="roadmapItem checkbox">
+              <input type="checkbox" disabled="true"/><span>
+                Drop nuove capuzzelle</span>
+              </label>
+              <label className="roadmapItem checkbox">
+              <input type="checkbox" disabled="true"/><span>
+                Collaborazioni</span>
+              </label>
+              <label className="roadmapItem checkbox">
+              <input type="checkbox" disabled="true"/><span>
+                Fase 3</span>
+              </label>
               </div>
             </div>
             <div id="social">
-              <a href="https://www.instagram.com/crypta_capuzzelle/">
+              <a href="
+              " target="_blank">
+              <div class="follow discord">
+                <img class="imgfollow" src="config/images/discordlogo.svg" alt="" />
+              </div></a><a href="
+              " target="_blank">
+              <div class="follow rarible">
+                <img class="imgfollow" src="config/images/rarible.svg" alt="" />
+              </div></a><a href="
+              " target="_blank">
+              <div class="follow instagram">
+                <img class="imgfollow" src="config/images/instagramlogo.svg" alt="" />
+              </div></a>
+              {/* <a href="https://www.instagram.com/crypta_capuzzelle/">
                 <img src="config/images/instagram.svg" alt="instagram" />
-              </a>
-              <iframe
+              </a> */}
+              {/* <iframe
                 src="https://discord.com/widget?id=1110284316640038922&theme=dark"
                 height="250"
                 allowtransparency="true"
                 frameborder="0"
                 sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-              ></iframe>
+              ></iframe> */}
               {/* <img src="config/images/discord.svg" alt="discord" /> */}
             </div>
           </section>
@@ -376,9 +391,15 @@ function App() {
           </section>
           <section id="footer">
             <img src="config/images/crypta_logo.jpg" alt="" />
+            <div class="logosocial">
+              <a href="https://www.instagram.com/crypta_capuzzelle/" target="_blank">
+            <img class="social" src="config/images/Instagram - Negative.svg" alt="" /></a>
+            <a href="" target="_blank">
+            <img class="social" src="config/images/Discord - Negative.svg" alt="" /></a>
+            </div>
             <p>
-              Copyrights – 2023 CRYPTA CAPUZZELLE by Lorenzo Gravina - Antonio
-              Ferraioli & Costantino Sorrentino . All rights reserved
+              Copyrights – 2023 CRYPTA CAPUZZELLE by <a href="" target="_blank"> Lorenzo Gravina</a> - <a href="" target="_blank">Antonio
+              Ferraioli</a> & <a href="" target="_blank">Costantino Sorrentino</a> . All rights reserved
             </p>
           </section>
         </div>

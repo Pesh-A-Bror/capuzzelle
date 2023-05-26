@@ -69,24 +69,26 @@
 #roadmap #roadmapContainer{
   flex: 4;
   flex-basis: 400px;
-  background-color: #242121;
+  background-color: #f44336;
   border-radius: 16px;
   padding: 32px;
   box-sizing: border-box;
   height: 100%;
+  color: black;
 
 }
 #roadmap #roadmapContainer #description{
-color: white;
+color: black;
   font-size: 16px;
   font-family: 'Inconsolata', monospace !important; 
   margin-bottom: 25px;
 }
 #roadmap #roadmapContainer #title{
-  font-size: 48px;
+  font-size: 32px;
   font-family: 'Inconsolata', monospace !important; 
-  color: white;
+  color: black;
   margin-bottom: 10px;
+  font-weight: 700;
 
 }
 #roadmap #roadmapContainer .roadmapItem img{
@@ -100,9 +102,39 @@ color: white;
   text-align: left;
   margin-bottom: 24px;
 }
+.follow.discord {
+  background-color: #5865F2;
+  padding: 32px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.follow.rarible {
+  background-color: #FEDA03;
+  padding: 32px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.follow.instagram {
+  background-color: #232121;
+  padding: 32px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+img.imgfollow {
+  margin: 0 !important;
+}
 
 #roadmap #roadmapContainer .roadmapItem{
-  font-weight: 900;
+  /* font-weight: 900;
   width: 100%;
   background: #ffab1c;
   display: flex;
@@ -113,7 +145,15 @@ color: white;
   box-sizing: border-box;
   margin-bottom: 10px;
   border-radius: 8px;
-  text-align: left;
+  text-align: left; */
+}
+.boxroad {
+  display: flex;
+  flex-direction: column;
+}
+label.roadmapItem.checkbox {
+  padding: 8px;
+  align-items: center;
 }
 #lecape{
   background-color: #242121;
@@ -140,8 +180,14 @@ color: white;
 #lecape #containerCape{
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  
   gap: 30px;
+}
+@media (max-width: 700px) {
+
+  #lecape #containerCape{
+   flex-wrap: wrap;
+  }
 }
 #lecape #containerCape .capa .role{
   color: white;
@@ -240,7 +286,7 @@ details summary {
   width: 100%;
   font-family: 'Inconsolata', monospace !important; 
   padding: 16px;
-  border-top: 1px solid white;
+  border-top: 1px dashed white;
   position: relative;
   cursor: pointer;
   font-size: 1.25rem;
