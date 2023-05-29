@@ -5,6 +5,10 @@
   
   text-align: center;
 }
+#contenitoreGenerale{
+  height: 100vh;
+  overflow: auto;
+}
 #progettoegallery{
   margin-top: 24px;
   

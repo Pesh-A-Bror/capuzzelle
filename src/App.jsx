@@ -98,14 +98,19 @@ function App() {
   };
   const show = () => {
     document.body.style.overflow = "auto";
-    document
-      .getElementById("progettoegallery")
-      .scrollIntoView({ behavior: "smooth" });
+    // document
+    //   .getElementById("progettoegallery")
+    //   .scrollIntoView({ behavior: "smooth" });
+    $("#progettoegallery").velocity("scroll", { 
+      container: $("#contenitoreGenerale"),
+      duration: 4000
+    });
     setshowSite(true);
   };
   useEffect(() => {
     getConfig();
     document.body.style.overflow = "hidden";
+
     document.getElementById("hero").scrollIntoView({ behavior: "smooth" });
     setshowSite(false);
   }, []);
@@ -116,11 +121,14 @@ function App() {
 
   return (
     <>
+    <div id="contenitoreGenerale">
+
+  
       <Hero showSite={showSite} setShowSite={() => show()}></Hero>
       <s.SpacerSmall />
       <section id="crypta"></section>
       {
-        <div className={showSite ? "show" : "hide"}>
+        <div id="containerShow" className={showSite ? "show" : "hide"}>
           <section id="progettoegallery">
             <WalletConnection></WalletConnection>
             <div id="containerProgettoeGallery">
@@ -131,7 +139,7 @@ function App() {
                 <div className="">
                   <p>
                     {" "}
-                    Il progetto <bold>“Crypta Capuzzelle”</bold> rappresenta la
+                    Il progetto <b>“Crypta Capuzzelle”</b> rappresenta la
                     trasformazione di uno dei luoghi più suggestivi e misteriosi
                     di Napoli in un’opera digitale unica. Le capuzzelle del
                     cimitero delle fontanelle sono teschi posti sulla superficie
@@ -148,8 +156,8 @@ function App() {
                 </div>
               </section>
               <section id="gallery">
-              <img class="one" src="config/images/gallery_one.png"  alt="" />
-                <img class="two" src="config/images/gallery_two.png" alt="" />
+              <img className="one" src="config/images/gallery_one.png"  alt="" />
+                <img className="two" src="config/images/gallery_two.png" alt="" />
                 <a href="https://opensea.io/collection/e-capuzzelle" target="_blank" id="collection">SCOPRI LA COLLEZIONE SU OPENSEA</a>
               </section>
             </div>
@@ -196,16 +204,16 @@ function App() {
             <div id="social">
               <a href="https://discord.com/invite/cnDefkn74b
               " target="_blank">
-              <div class="follow discord">
-                <img class="imgfollow" src="config/images/discordlogo.svg" alt="" />
+              <div className="follow discord">
+                <img className="imgfollow" src="config/images/discordlogo.svg" alt="" />
               </div></a><a href="https://rarible.com/collection/polygon/0x304dbda4452f3e1337c8b95f1dc5087c0c96cbdd/items
               " target="_blank">
-              <div class="follow rarible">
-                <img class="imgfollow" src="config/images/rarible.svg" alt="" />
+              <div className="follow rarible">
+                <img className="imgfollow" src="config/images/rarible.svg" alt="" />
               </div></a><a href="https://www.instagram.com/crypta_capuzzelle/
               " target="_blank">
-              <div class="follow instagram">
-                <img class="imgfollow" src="config/images/instagramlogo.svg" alt="" />
+              <div className="follow instagram">
+                <img className="imgfollow" src="config/images/instagramlogo.svg" alt="" />
               </div></a>
               {/* <a href="https://www.instagram.com/crypta_capuzzelle/">
                 <img src="config/images/instagram.svg" alt="instagram" />
@@ -348,11 +356,11 @@ function App() {
           </section>
           <section id="footer">
             <img src="config/images/crypta_logo.jpg" alt="" />
-            <div class="logosocial">
+            <div className="logosocial">
               <a href="https://www.instagram.com/crypta_capuzzelle/" target="_blank">
-            <img class="social" src="config/images/Instagram - Negative.svg" alt="" /></a>
+            <img className="social" src="config/images/Instagram - Negative.svg" alt="" /></a>
             <a href="https://discord.com/invite/cnDefkn74b" target="_blank">
-            <img class="social" src="config/images/Discord - Negative.svg" alt="" /></a>
+            <img className="social" src="config/images/Discord - Negative.svg" alt="" /></a>
             </div>
             <p>
               Copyrights – 2023 CRYPTA CAPUZZELLE by <a href="https://www.linkedin.com/in/lorenzo-gravina-a4175037/" target="_blank"> Lorenzo Gravina</a> - <a href="https://www.linkedin.com/in/antonioferraioli/" target="_blank">Antonio
@@ -362,7 +370,8 @@ function App() {
         </div>
       }
       {/* </s.Container>
-      </s.Screen> */}
+      </s.Screen> */} 
+       </div>
     </>
   );
 }
