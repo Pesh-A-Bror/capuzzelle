@@ -188,7 +188,7 @@ function WalletConnection(props) {
                   {feedback}
                 </div>
                 <div className={css.totaleCapuzzelle}>
-                  Capuzzella #{(data.totalSupply)+1}
+                  Capuzzella #{(parseInt(data.totalSupply))+1}
                 </div>
                 <div className={css.infoNoCapuzzelle}>
                 Per ammirare la tua capuzzella 
@@ -209,7 +209,9 @@ function WalletConnection(props) {
                     Vai su Opensea
                   </a>
                 </div>
-              </>) : ( <>
+              </>) : 
+              
+              ( <>
                 <div className={css.title}>Capuzzelle adottate</div>
 
                 <div className={css.totaleCapuzzelle}>
