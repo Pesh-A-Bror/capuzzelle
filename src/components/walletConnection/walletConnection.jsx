@@ -190,11 +190,11 @@ function WalletConnection(props) {
                 <div className={css.totaleCapuzzelle}>
                   Capuzzella #{(parseInt(data.totalSupply))+1}
                 </div>
-                <div className={css.infoNoCapuzzelle}>
+                <div className={css.infoNoCapuzzelle} style={{marginTop:'2rem'}}>
                 Per ammirare la tua capuzzella 
                 </div>
     
-                <div className={css.containerButtons}>
+                <div className={css.containerButtons} style={{marginTop:'2rem'}}>
                   <a
                     href="https://rarible.com/collection/polygon/0x304dbda4452f3e1337c8b95f1dc5087c0c96cbdd/items
                     " target="_blank"
