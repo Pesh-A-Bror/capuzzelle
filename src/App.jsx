@@ -98,6 +98,7 @@ function App() {
   };
   const show = () => {
     document.body.style.overflow = "auto";
+    document.getElementById('contenitoreGenerale').style.overflow = "auto";
     // document
     //   .getElementById("progettoegallery")
     //   .scrollIntoView({ behavior: "smooth" });
@@ -109,10 +110,14 @@ function App() {
   };
   useEffect(() => {
     getConfig();
-    document.body.style.overflow = "hidden";
-
+    
     document.getElementById("hero").scrollIntoView({ behavior: "smooth" });
     setshowSite(false);
+    setTimeout(() => {
+      
+      document.body.style.overflow = "hidden";
+      document.getElementById('contenitoreGenerale').style.overflow = "hidden";
+    }, 100);
   }, []);
 
   useEffect(() => {
@@ -172,31 +177,31 @@ function App() {
               </div>
               <div className="boxroad">
               <label className="roadmapItem checkbox stroked">
-              <input type="checkbox" disabled="true" checked/><span>
+              <input type="checkbox" disabled checked/><span>
                 Lancio adozione 50 capuzzelle</span>
               </label>
               <label className="roadmapItem checkbox stroked">
-              <input type="checkbox" disabled="true" checked/><span>
+              <input type="checkbox" disabled checked/><span>
                 Creazione canale Discord</span>
               </label>
               <label className="roadmapItem checkbox">
-              <input type="checkbox" disabled="true" /><span>
+              <input type="checkbox" disabled /><span>
                 Fine adozione 50 capuzzelle</span>
               </label>
               <label className="roadmapItem checkbox">
-              <input type="checkbox" v/><span>
+              <input type="checkbox" disabled /><span>
                 Merch esclusivo</span>
               </label>
               <label className="roadmapItem checkbox">
-              <input type="checkbox" disabled="true"/><span>
+              <input type="checkbox" disabled/><span>
                 Drop nuove capuzzelle</span>
               </label>
               <label className="roadmapItem checkbox">
-              <input type="checkbox" disabled="true"/><span>
+              <input type="checkbox" disabled/><span>
                 Collaborazioni</span>
               </label>
               <label className="roadmapItem checkbox">
-              <input type="checkbox" disabled="true"/><span>
+              <input type="checkbox" disabled/><span>
                 Fase 3</span>
               </label>
               </div>
@@ -294,7 +299,7 @@ function App() {
                 
               <details>
                   <summary>Come posso acquistare una NFT su Crypto Capuzzelle?</summary>
-                  <p>
+                  <div>
                   Per acquistare una NFT su Crypto Capuzzelle, segui questi semplici passaggi:
                   <ul>
                     <li>
@@ -317,7 +322,7 @@ function App() {
                   </ul>
 
 
-                  </p>
+                  </div>
                 </details>
 
                 <details>

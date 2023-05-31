@@ -44,6 +44,7 @@ function WalletConnection(props) {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
+  const [claimed, setClaimed] = useState(false);
   const [mintAmount, setMintAmount] = useState(1);
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const truncate = (input, len) =>
@@ -93,9 +94,10 @@ function WalletConnection(props) {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `UA, ${CONFIG.NFT_NAME} è tua! visita opensea per vederla.`
+          `Hai adottato una capuzzella`
         );
         setClaimingNft(false);
+        setClaimed(true);
         dispatch(fetchData(blockchain.account));
       });
   };
@@ -180,7 +182,34 @@ function WalletConnection(props) {
                 ) : null}
               </>
             ) : (
-              <>
+              claimed ? (
+                <>
+                <div className={css.title}>
+                  {feedback}
+                </div>
+                <div className={css.totaleCapuzzelle}>
+                  Capuzzella #{(data.totalSupply)+1}
+                </div>
+                <div className={css.infoNoCapuzzelle}>
+                Per ammirare la tua capuzzella 
+                </div>
+    
+                <div className={css.containerButtons}>
+                  <a
+                    href="https://rarible.com/collection/polygon/0x304dbda4452f3e1337c8b95f1dc5087c0c96cbdd/items
+                    " target="_blank"
+                    className={css.buttonNoCapuzzelle}
+                  >
+                    Vai su RARIBLE
+                  </a>
+                  <a
+                    href="https://opensea.io/collection/e-capuzzelle" target="_blank"
+                    className={css.buttonNoCapuzzelle}
+                  >
+                    Vai su Opensea
+                  </a>
+                </div>
+              </>) : ( <>
                 <div className={css.title}>Capuzzelle adottate</div>
 
                 <div className={css.totaleCapuzzelle}>
@@ -210,6 +239,8 @@ function WalletConnection(props) {
                 </button>
                 <div className={css.info}>connettiti alla rete polygon</div>
               </>
+            )
+             
             )}
           </>
         )}
